@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mochila de viagem</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main class="content">
+    <div class="container-bagpack">
+      <div class="bagpack"></div>
+      <form action="" class="form-bagpack" id="form-item">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" minlength="2" maxlength="30">
+        <label for="quantity">Quantity</label>
+        <input type="number" name="quantity" id="quantity" min="1" max="9999">
+        <input type="submit" value="Add" class="button-register" id="button-register">
+        <div class="error" id="error-name"></div>
+        <div class="error" id="error-quantity"></div>
+      </form>
+    </div>
+
+    <ul class="list" id="list"></ul>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
