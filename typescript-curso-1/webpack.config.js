@@ -24,6 +24,7 @@ module.exports = {
     path: path.resolve(__dirname, 'public'),
   },
   devServer: {
+    open: true,
     static: {
       directory: path.join(__dirname, 'public'),
     },
