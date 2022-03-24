@@ -1,3 +1,3 @@
-import NegociacaoController from './negociacao-controller.js'
+import NegociacaoController from './negociacao-controller'
 
 export { NegociacaoController }

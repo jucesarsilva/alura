@@ -1,6 +1,6 @@
 "use strict"
 
-import { Negociacao, Negociacoes } from '../models/index.js'
+import { Negociacao, Negociacoes } from '../models/index'
 
 class NegociacaoController {
     private inputData: HTMLInputElement | any;

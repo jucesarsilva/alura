@@ -1,4 +1,4 @@
-import { Negociacao } from "./index.js";
+import { Negociacao } from "./index";
 
 class Negociacoes {
   private negociacoes: Negociacao[] = [];

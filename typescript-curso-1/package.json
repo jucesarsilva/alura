@@ -2,21 +2,20 @@
   "name": "typescript-curso-1",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/js/app.js",
+  "main": "public/js/app.js",
   "scripts": {
-    "preinstall": "cd servidor-api && yarn install",
-    "start": "lite-server --baseDir=dist",
-    "build": "tsc",
-    "build-test": "cross-env NODE_PATH=dist node --inspect dist",
-    "watch": "tsc -w",
+    "prestart": "yarn build",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^6.0.0",
-    "cross-env": "^7.0.3",
-    "lite-server": "^2.6.1",
-    "typescript": "^4.2.2"
+    "ts-loader": "^9.2.8",
+    "typescript": "^4.6.2",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
   }
 }

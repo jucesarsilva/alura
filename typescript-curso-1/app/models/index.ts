@@ -1,4 +1,4 @@
-import Negociacao from './negociacao.js'
-import Negociacoes from './negociacoes.js'
+import Negociacao from './negociacao'
+import Negociacoes from './negociacoes'
 
 export { Negociacao, Negociacoes }
