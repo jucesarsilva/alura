@@ -13,6 +13,11 @@ module.exports = {
   },
   resolve: {
     extensions: ['.ts', '.js'],
+    alias: {
+      '@controllers': path.resolve(__dirname, 'app/controllers/'),
+      '@models': path.resolve(__dirname, 'app/models/'),
+      '@views': path.resolve(__dirname, 'app/views/'),
+    }
   },
   output: {
     filename: 'js/bundle.js',

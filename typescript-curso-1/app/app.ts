@@ -1,6 +1,6 @@
 "use strict"
 
-import { NegociacaoController } from './controllers/index'
+import { NegociacaoController } from '@controllers/index'
 
 const controller = new NegociacaoController()
 const form: HTMLInputElement | any = document.querySelector(".form")

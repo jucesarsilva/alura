@@ -1,4 +1,4 @@
-import { Negociacao } from "./index";
+import { Negociacao } from "@models/index";
 
 class Negociacoes {
   private negociacoes: Negociacao[] = [];
