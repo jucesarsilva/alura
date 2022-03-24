@@ -1,0 +1,22 @@
+{
+  "name": "typescript-curso-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/js/app.js",
+  "scripts": {
+    "preinstall": "cd servidor-api && yarn install",
+    "start": "lite-server --baseDir=dist",
+    "build": "tsc",
+    "build-test": "cross-env NODE_PATH=dist node --inspect dist",
+    "watch": "tsc -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^6.0.0",
+    "cross-env": "^7.0.3",
+    "lite-server": "^2.6.1",
+    "typescript": "^4.2.2"
+  }
+}

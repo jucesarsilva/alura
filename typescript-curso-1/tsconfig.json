@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "dist/js",
+    "target": "es6",
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "allowJs": false,
+    "strict": true,
+  },
+  "include": ["app/**/*"]
+}
