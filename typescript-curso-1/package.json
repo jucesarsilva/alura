@@ -2,7 +2,7 @@
   "name": "typescript-curso-1",
   "version": "1.0.0",
   "description": "",
-  "main": "public/js/app.js",
+  "main": "public/js/bundle.js",
   "scripts": {
     "prestart": "yarn build",
     "poststart": "yarn watch",
