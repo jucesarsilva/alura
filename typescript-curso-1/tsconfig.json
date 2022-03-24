@@ -10,8 +10,11 @@
     "paths": {
       "@controllers/*": ["controllers/*"],
       "@models/*": ["models/*"],
-      "@views/*": ["views/*"],
+      "@views/*": ["views/*"]
     }
+  },
+  "tsc-alias": {
+    "resolveFullPaths": true
   },
   "include": ["app/**/*"]
 }
