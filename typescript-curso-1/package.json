@@ -5,7 +5,9 @@
   "main": "public/js/bundle.js",
   "scripts": {
     "server": "lite-server --config=bs-config.js",
+    "server:alias": "http-server ./public ./node_modules/http-server/lib/http-server.js -c-1 --port 3002 --proxy http://alura-typescript-curso-1.com.br:3002",
     "start": "concurrently \"yarn run watch\" \"yarn run server\"",
+    "start:alias": "concurrently \"yarn run watch\" \"yarn run server:alias\"",
     "watch": "watch \"yarn run build\" ./app",
     "build": "tsc --project tsconfig.json && tsc-alias -p tsconfig.json",
     "start:prod": "webpack-dev-server --mode production",
@@ -17,6 +19,7 @@
   "devDependencies": {
     "concurrently": "^6.0.0",
     "connect-history-api-fallback": "^1.6.0",
+    "http-server": "^14.1.0",
     "lite-server": "^2.6.1",
     "ts-loader": "^9.2.8",
     "tsc-alias": "^1.6.4",
