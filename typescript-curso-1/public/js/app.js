@@ -6,4 +6,3 @@ form.addEventListener("submit", function (event) {
     event.preventDefault();
     controller.adiciona();
 });
-console.log('xoxe 2');
