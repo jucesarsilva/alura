@@ -4,20 +4,23 @@
   "description": "",
   "main": "public/js/bundle.js",
   "scripts": {
-    "prestart": "yarn build",
-    "poststart": "yarn watch",
-    "build": "webpack --mode production",
-    "build:alias": "tsc --project tsconfig.json && tsc-alias -p tsconfig.json",
-    "start": "webpack-dev-server --mode development",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "build -w"
+    "server": "lite-server --config=bs-config.json",
+    "start": "concurrently \"yarn run watch\" \"yarn run server\"",
+    "watch": "watch \"yarn run build\" ./app",
+    "build": "tsc --project tsconfig.json && tsc-alias -p tsconfig.json",
+    "start:prod": "webpack-dev-server --mode production",
+    "build:prod": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "concurrently": "^6.0.0",
+    "lite-server": "^2.6.1",
     "ts-loader": "^9.2.8",
     "tsc-alias": "^1.6.4",
     "typescript": "^4.6.2",
+    "watch": "^1.0.2",
     "webpack": "^5.70.0",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.7.4"

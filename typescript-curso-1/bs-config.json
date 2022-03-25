@@ -1,0 +1,11 @@
+{
+  "files": [
+    "public/**/**/*.{html,htm,css,js,ts}"
+  ],
+  "watchOptions": {
+    "ignored": "node_modules"
+  },
+  "server": {
+    "baseDir": "public"
+  }
+}
