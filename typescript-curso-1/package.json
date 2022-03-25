@@ -4,7 +4,7 @@
   "description": "",
   "main": "public/js/bundle.js",
   "scripts": {
-    "server": "lite-server --config=bs-config.json",
+    "server": "lite-server --config=bs-config.js",
     "start": "concurrently \"yarn run watch\" \"yarn run server\"",
     "watch": "watch \"yarn run build\" ./app",
     "build": "tsc --project tsconfig.json && tsc-alias -p tsconfig.json",
@@ -16,6 +16,7 @@
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^6.0.0",
+    "connect-history-api-fallback": "^1.6.0",
     "lite-server": "^2.6.1",
     "ts-loader": "^9.2.8",
     "tsc-alias": "^1.6.4",
