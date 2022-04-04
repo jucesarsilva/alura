@@ -1,15 +1,15 @@
-import { Negociacao } from "@models/index";
+import { Negociacao } from '@models/index'
 
 class Negociacoes {
-  private negociacoes: Negociacao[] = [];
+  private negociacoes: Negociacao[] = []
 
   adiciona(negociacao: Negociacao) {
-    this.negociacoes.push(negociacao);
+    this.negociacoes.push(negociacao)
   }
 
   lista(): readonly Negociacao[] {
-    return this.negociacoes;
+    return this.negociacoes
   }
 }
 
-export default Negociacoes;
+export default Negociacoes
