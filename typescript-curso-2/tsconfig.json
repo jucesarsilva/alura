@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "outDir": "public/js",
+    "noImplicitAny": true,
+    "module": "es6",
+    "target": "es5",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "baseUrl": "app/",
+    "paths": {
+      "@controllers/*": ["controllers/*"],
+      "@models/*": ["models/*"],
+      "@views/*": ["views/*"],
+      "@enums/*": ["enums/*"]
+    }
+  },
+  "tsc-alias": {
+    "resolveFullPaths": true
+  },
+  "include": ["app/**/*"]
+}
