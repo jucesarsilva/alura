@@ -1,4 +1,4 @@
-import { Negociacoes } from '@models/index'
+import { Negociacoes, Negociacao } from '@models/index'
 import { View } from '@views/index'
 
 class NegociacoesView extends View<Negociacoes> {
@@ -15,7 +15,7 @@ class NegociacoesView extends View<Negociacoes> {
         <tbody>
           ${model
             .lista()
-            .map((negociacao:any) => {
+            .map((negociacao:Negociacao) => {
               return `
                 <tr>
                   <td>${this.formatar(negociacao.data)}
