@@ -24,3 +24,13 @@ Este projeto centraliza os exercícios dos cursos realizados na Alura
 <br/>
 <br/>
 <img src="assets/certificado-formal-typescript-evoluindo-javascript.jpg" width='100%' height='auto' />
+
+## Curso: TYPESCRIPT PARTE 2: EVOLUINDO SEU JAVASCRIPT
+[DEMO](https://jucesarsilva.github.io/alura/typescript-curso-2/public/)
+<br/>
+<br/>
+<br/>
+<img src="assets/typescript-curso-2-certificado.jpg" width='100%' height='auto' />
+<br/>
+<br/>
+<img src="assets/certificado-formal-typescript-evoluindo-javascript.jpg" width='100%' height='auto' />
