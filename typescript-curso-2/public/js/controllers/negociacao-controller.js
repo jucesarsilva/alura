@@ -1,7 +1,7 @@
 import { DiasDaSemana } from '../enums/index.js';
 import { Negociacao, Negociacoes } from '../models/index.js';
 import { MensagemView, NegociacoesView } from '../views/index.js';
-var NegociacaoController = /** @class */ (function () {
+var NegociacaoController = (function () {
     function NegociacaoController() {
         this.negociacoes = new Negociacoes();
         this.negociacoesView = new NegociacoesView('#negociacoesView', true);

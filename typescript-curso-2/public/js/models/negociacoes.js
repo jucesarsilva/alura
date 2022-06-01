@@ -1,4 +1,4 @@
-var Negociacoes = /** @class */ (function () {
+var Negociacoes = (function () {
     function Negociacoes() {
         this.negociacoes = [];
     }

@@ -1,4 +1,4 @@
-var View = /** @class */ (function () {
+var View = (function () {
     function View(seletor, escapar) {
         this.escapar = false;
         var elemento = document.querySelector(seletor);

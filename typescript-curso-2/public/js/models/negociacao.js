@@ -1,4 +1,4 @@
-var Negociacao = /** @class */ (function () {
+var Negociacao = (function () {
     function Negociacao(_data, quantidade, valor) {
         this._data = _data;
         this.quantidade = quantidade;

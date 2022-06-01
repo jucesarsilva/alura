@@ -14,7 +14,7 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 import { View } from './index.js';
-var NegociacoesView = /** @class */ (function (_super) {
+var NegociacoesView = (function (_super) {
     __extends(NegociacoesView, _super);
     function NegociacoesView() {
         return _super !== null && _super.apply(this, arguments) || this;

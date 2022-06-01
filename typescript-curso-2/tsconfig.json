@@ -8,6 +8,7 @@
     "noImplicitAny": true,
     "noEmitOnError": true,
     "removeComments": true,
+    "strictNullChecks": false,
     "allowJs": true,
     "paths": {
       "@controllers/*": ["controllers/*"],
