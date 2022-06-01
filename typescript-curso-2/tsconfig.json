@@ -1,12 +1,14 @@
 {
   "compilerOptions": {
+    "baseUrl": "app/",
     "outDir": "public/js",
-    "noImplicitAny": true,
     "module": "es6",
     "target": "es5",
-    "allowJs": true,
     "moduleResolution": "node",
-    "baseUrl": "app/",
+    "noImplicitAny": true,
+    "noEmitOnError": true,
+    "removeComments": true,
+    "allowJs": true,
     "paths": {
       "@controllers/*": ["controllers/*"],
       "@models/*": ["models/*"],
