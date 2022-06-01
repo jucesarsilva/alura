@@ -33,4 +33,4 @@ Este projeto centraliza os exercícios dos cursos realizados na Alura
 <img src="assets/typescript-curso-2-certificado.jpg" width='100%' height='auto' />
 <br/>
 <br/>
-<img src="assets/certificado-formal-typescript-evoluindo-javascript.jpg" width='100%' height='auto' />
+<img src="assets/typescript-curso-2-certificado-formal.jpg" width='100%' height='auto' />
