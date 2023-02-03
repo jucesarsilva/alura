@@ -48,7 +48,7 @@ export class NegociacaoController {
 				return negociacoesDeHoje.filter((negociacaoDeHoje) => {
 					return !this.negociacoes
 						.lista()
-						.some((negociacao: any) => negociacao.ehIgual(negociacaoDeHoje))
+						.some((negociacao) => negociacao.ehIgual(negociacaoDeHoje))
 				})
 			})
 			.then((negociacoesDeHoje) => {

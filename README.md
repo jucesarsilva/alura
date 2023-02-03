@@ -34,3 +34,13 @@ Este projeto centraliza os exercícios dos cursos realizados na Alura
 <br/>
 <br/>
 <img src="assets/typescript-curso-2-certificado-formal.jpg" width='100%' height='auto' />
+
+## Curso: TYPESCRIPT PARTE 3: MAIS TÉCNICA e BOAS PRÁTICAS
+[DEMO](https://jucesarsilva.github.io/alura/typescript-curso-3/public/)
+<br/>
+<br/>
+<br/>
+<img src="assets/typescript-curso-3-certificado.jpg" width='100%' height='auto' />
+<br/>
+<br/>
+<img src="assets/typescript-curso-3-certificado-formal.jpg" width='100%' height='auto' />
