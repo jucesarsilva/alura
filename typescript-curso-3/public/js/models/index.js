@@ -1,3 +1,3 @@
-import Negociacao from './negociacao.js';
-import Negociacoes from './negociacoes.js';
-export { Negociacao, Negociacoes };
+export { Negociacoes } from './negociacoes.js';
+export { Negociacao } from './negociacao.js';
+//# sourceMappingURL=index.js.map

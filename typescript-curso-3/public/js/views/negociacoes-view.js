@@ -13,7 +13,14 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import { View } from './index.js';
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+import { escapar } from '../decorators/index.js';
+import { View } from './view.js';
 var NegociacoesView = (function (_super) {
     __extends(NegociacoesView, _super);
     function NegociacoesView() {
@@ -21,16 +28,20 @@ var NegociacoesView = (function (_super) {
     }
     NegociacoesView.prototype.template = function (model) {
         var _this = this;
-        return "\n      <table class='table table-hover table-bordered'>\n        <thead>\n          <tr>\n            <th>DATA</th>\n            <th>QUANTIDADE</th>\n            <th>VALOR</th>\n          </tr>\n        </thead>\n        <tbody>\n          ".concat(model
+        return "\n    <table class='table table-hover table-bordered'>\n      <thead>\n        <tr>\n          <th>DATA</th>\n          <th>QUANTIDADE</th>\n          <th>VALOR</th>\n        </tr>\n      </thead>\n      <tbody>\n      ".concat(model
             .lista()
             .map(function (negociacao) {
-            return "\n                <tr>\n                  <td>".concat(_this.formatar(negociacao.data), "\n                  </td>\n                  <td>\n                    ").concat(negociacao.quantidade, "\n                  </td>\n                  <td>\n                    ").concat(negociacao.valor, "\n                  </td>\n                </tr>\n              ");
+            return "\n            <tr>\n              <td>".concat(_this.formatar(negociacao.data), "\n              </td>\n              <td>\n                ").concat(negociacao.quantidade, "\n              </td>\n              <td>\n                ").concat(negociacao.valor, "\n              </td>\n            </tr>\n          ");
         })
-            .join(''), "\n        </tbody>\n      </table>\n    ");
+            .join(''), "\n      </tbody>\n    </table>\n    ");
     };
     NegociacoesView.prototype.formatar = function (data) {
         return new Intl.DateTimeFormat().format(data);
     };
+    __decorate([
+        escapar
+    ], NegociacoesView.prototype, "template", null);
     return NegociacoesView;
 }(View));
-export default NegociacoesView;
+export { NegociacoesView };
+//# sourceMappingURL=negociacoes-view.js.map

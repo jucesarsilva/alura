@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require('path')
 
 module.exports = {
   entry: './app/app.ts',
@@ -17,6 +17,11 @@ module.exports = {
       '@controllers': path.resolve(__dirname, 'app/controllers/'),
       '@models': path.resolve(__dirname, 'app/models/'),
       '@views': path.resolve(__dirname, 'app/views/'),
+      '@decorators': path.resolve(__dirname, 'app/decorators/'),
+      '@services': path.resolve(__dirname, 'app/services/'),
+      '@utils': path.resolve(__dirname, 'app/services/'),
+      '@enums': path.resolve(__dirname, 'app/enums/'),
+      '@interfaces': path.resolve(__dirname, 'app/interfaces/'),
     }
   },
   output: {

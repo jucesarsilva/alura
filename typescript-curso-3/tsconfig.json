@@ -10,11 +10,17 @@
     "removeComments": true,
     "strictNullChecks": true,
     "allowJs": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
     "paths": {
       "@controllers/*": ["controllers/*"],
       "@models/*": ["models/*"],
       "@views/*": ["views/*"],
-      "@enums/*": ["enums/*"]
+      "@enums/*": ["enums/*"],
+      "@decorators/*": ["decorators/*"],
+      "@services/*": ["services/*"],
+      "@utils/*": ["utils/*"],
+      "@interfaces/*": ["interfaces/*"],
     }
   },
   "tsc-alias": {

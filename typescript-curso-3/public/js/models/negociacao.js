@@ -4,6 +4,13 @@ var Negociacao = (function () {
         this.quantidade = quantidade;
         this.valor = valor;
     }
+    Negociacao.criaDe = function (dataString, quantidadeString, valorString) {
+        var exp = /-/g;
+        var date = new Date(dataString.replace(exp, ','));
+        var quantidade = parseInt(quantidadeString);
+        var valor = parseFloat(valorString);
+        return new Negociacao(date, quantidade, valor);
+    };
     Object.defineProperty(Negociacao.prototype, "volume", {
         get: function () {
             return this.quantidade * this.valor;
@@ -19,13 +26,15 @@ var Negociacao = (function () {
         enumerable: false,
         configurable: true
     });
-    Negociacao.criaDe = function (dataString, quantidadeString, valorString) {
-        var exp = /-/g;
-        var date = new Date(dataString.replace(exp, ','));
-        var quantidade = parseInt(quantidadeString);
-        var valor = parseFloat(valorString);
-        return new Negociacao(date, quantidade, valor);
+    Negociacao.prototype.paraTexto = function () {
+        return "\n        Data: ".concat(this.data, ",\n        Quantidade: ").concat(this.quantidade, ",\n        Valor: ").concat(this.valor, "\n    ");
+    };
+    Negociacao.prototype.ehIgual = function (negociacao) {
+        return (this.data.getDate() === negociacao.data.getDate() &&
+            this.data.getMonth() === negociacao.data.getMonth() &&
+            this.data.getFullYear() === negociacao.data.getFullYear());
     };
     return Negociacao;
 }());
-export default Negociacao;
+export { Negociacao };
+//# sourceMappingURL=negociacao.js.map

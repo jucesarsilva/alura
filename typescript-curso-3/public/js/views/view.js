@@ -1,6 +1,5 @@
 var View = (function () {
-    function View(seletor, escapar) {
-        this.escapar = false;
+    function View(seletor) {
         var elemento = document.querySelector(seletor);
         if (elemento) {
             this.elemento = elemento;
@@ -8,17 +7,12 @@ var View = (function () {
         else {
             throw Error("Seletor ".concat(seletor, " n\u00E3o existe no DOM. Verifique"));
         }
-        if (escapar) {
-            this.escapar = escapar;
-        }
     }
     View.prototype.update = function (model) {
         var template = this.template(model);
-        if (this.escapar) {
-            template = template.replace(/<script>[\s\S]*?<\/script>/, '');
-        }
         this.elemento.innerHTML = template;
     };
     return View;
 }());
-export default View;
+export { View };
+//# sourceMappingURL=view.js.map

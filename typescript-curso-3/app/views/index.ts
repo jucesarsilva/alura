@@ -1,5 +1,3 @@
-import MensagemView from './mensagem-view'
-import NegociacoesView from './negociacoes-view'
-import View from './view'
-
-export { MensagemView, NegociacoesView, View }
+export { MensagemView } from './mensagem-view'
+export { NegociacoesView } from './negociacoes-view'
+export { View } from './view'

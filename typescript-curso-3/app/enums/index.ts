@@ -1,3 +1,1 @@
-import DiasDaSemana from './dias-da-semana'
-
-export { DiasDaSemana }
+export { DiasDaSemana }  from './dias-da-semana'

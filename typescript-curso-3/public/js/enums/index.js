@@ -1,2 +1,2 @@
-import DiasDaSemana from './dias-da-semana.js';
-export { DiasDaSemana };
+export { DiasDaSemana } from './dias-da-semana.js';
+//# sourceMappingURL=index.js.map

@@ -1,3 +1,1 @@
-import NegociacaoController from './negociacao-controller'
-
-export { NegociacaoController }
+export { NegociacaoController } from './negociacao-controller'

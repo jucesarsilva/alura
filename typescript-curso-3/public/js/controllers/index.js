@@ -1,2 +1,2 @@
-import NegociacaoController from './negociacao-controller.js';
-export { NegociacaoController };
+export { NegociacaoController } from './negociacao-controller.js';
+//# sourceMappingURL=index.js.map

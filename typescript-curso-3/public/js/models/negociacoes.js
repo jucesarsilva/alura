@@ -8,6 +8,13 @@ var Negociacoes = (function () {
     Negociacoes.prototype.lista = function () {
         return this.negociacoes;
     };
+    Negociacoes.prototype.paraTexto = function () {
+        return JSON.stringify(this.negociacoes, null, 2);
+    };
+    Negociacoes.prototype.ehIgual = function (negociacoes) {
+        return (JSON.stringify(this.negociacoes) === JSON.stringify(negociacoes.lista()));
+    };
     return Negociacoes;
 }());
-export default Negociacoes;
+export { Negociacoes };
+//# sourceMappingURL=negociacoes.js.map
