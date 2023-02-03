@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-inferrable-types */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 export abstract class View<T> {
 	protected elemento: HTMLElement
 
@@ -10,10 +12,10 @@ export abstract class View<T> {
 		}
 	}
 
-	public update(model: T): void {
-		const template = this.template(model)
+	public update(model: T, color: string = 'info'): void {
+		const template = this.template(model, color)
 		this.elemento.innerHTML = template
 	}
 
-	protected abstract template(model: T): string
+	protected abstract template(model: T, color: string): string
 }

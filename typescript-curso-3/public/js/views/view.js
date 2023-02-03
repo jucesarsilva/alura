@@ -8,8 +8,9 @@ var View = (function () {
             throw Error("Seletor ".concat(seletor, " n\u00E3o existe no DOM. Verifique"));
         }
     }
-    View.prototype.update = function (model) {
-        var template = this.template(model);
+    View.prototype.update = function (model, color) {
+        if (color === void 0) { color = 'info'; }
+        var template = this.template(model, color);
         this.elemento.innerHTML = template;
     };
     return View;

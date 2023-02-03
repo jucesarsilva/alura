@@ -19,8 +19,8 @@ var MensagemView = (function (_super) {
     function MensagemView() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    MensagemView.prototype.template = function (model) {
-        return "\n        <p class='alert alert-info'>".concat(model, "</p>\n    ");
+    MensagemView.prototype.template = function (model, color) {
+        return "\n      <p class='alert alert-".concat(color, "'>").concat(model, "</p>\n    ");
     };
     return MensagemView;
 }(View));

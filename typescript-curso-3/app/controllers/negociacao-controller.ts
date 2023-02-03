@@ -31,7 +31,7 @@ export class NegociacaoController {
 		)
 
 		if (!this.ehDiaUtil(negociacao.data)) {
-			this.mensagemView.update('Apenas negociações em dias úteis são aceitas')
+			this.mensagemView.update('Apenas negociações em dias úteis são aceitas', 'danger')
 			return
 		}
 

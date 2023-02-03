@@ -21,7 +21,7 @@ var NegociacaoController = (function () {
     NegociacaoController.prototype.adiciona = function () {
         var negociacao = Negociacao.criaDe(this.inputData.value, this.inputQuantidade.value, this.inputValor.value);
         if (!this.ehDiaUtil(negociacao.data)) {
-            this.mensagemView.update('Apenas negociações em dias úteis são aceitas');
+            this.mensagemView.update('Apenas negociações em dias úteis são aceitas', 'danger');
             return;
         }
         this.negociacoes.adiciona(negociacao);
